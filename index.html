@@ -81,7 +81,7 @@
     <div class="grid-sizer"></div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic11.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic11.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -93,7 +93,7 @@
     </div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic01.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic01.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -105,7 +105,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic10.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic10.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -117,7 +117,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic02.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic02.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -129,7 +129,7 @@
     </div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic03.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic03.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -141,7 +141,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic04.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic04.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -153,7 +153,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic12.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic12.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -165,7 +165,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic05.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic05.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -177,7 +177,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic06.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic06.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -189,7 +189,7 @@
     </div>
 
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic07.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic07.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -201,7 +201,7 @@
     </div>
     
     <div class="grid-item">
-      <img class="img-responsive" alt="" src="pic08.jpg">
+      <img class="img-responsive" alt="" src="./assets/images/pic08.jpg" onContextMenu="return false">
       <a href="./project.html" class="project-description">
         <div class="project-text-holder">
           <div class="project-text-inner">
@@ -220,6 +220,7 @@
   document.addEventListener("DOMContentLoaded", function (event) {
      masonryBuild();
   });
+  
 </script>
 
 </main>
@@ -228,6 +229,11 @@
 document.addEventListener("DOMContentLoaded", function (event) {
   navbarToggleSidebar();
   navActivePage();
+});
+const img = document.querySelectorAll('img');
+img.addEventListener('contextmenu', (e) => {
+  e.preventDefault();
+  return false
 });
 </script>
 
@@ -244,6 +250,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   ga('send', 'pageview');
 </script>
 
---><script type="text/javascript" src="./main.85741bff.js"></script></body>
+--><script type="text/javascript" src="./main.85741bff.js"></script>
+</body>
 
 </html>
